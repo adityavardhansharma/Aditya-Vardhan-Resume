@@ -150,7 +150,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://talenttrailats.netlify.app/",
+          href: "https://talenttrailresume.netlify.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
