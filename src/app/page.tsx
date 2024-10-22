@@ -10,22 +10,9 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import TypingAnimation from "@/components/magicui/typing-animation";
 import IconCloud from "@/components/magicui/icon-cloud";
-import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
 import DownloadButton from '@/components/ui/DownloadButton';
 
 const BLUR_FADE_DELAY = 0.04;
-
-
-
-export function ScrollBasedVelocityDemo() {
-  return (
-      <VelocityScroll
-          text=""
-          default_velocity={5}
-          className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
-      />
-  );
-}
 
 export function TypingAnimationDemo() {
   const anText = "Data Science | Machine Learning | Gen AI | Fullstack Web Dev";
