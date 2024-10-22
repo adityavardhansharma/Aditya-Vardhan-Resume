@@ -8,90 +8,14 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
-import TypingAnimation from "@/components/magicui/typing-animation";
-import IconCloud from "@/components/magicui/icon-cloud";
-import { VelocityScroll } from "@/components/magicui/scroll-based-velocity";
+import { TypingAnimationDemo } from "@/components/ui/typing-animation-demo";
+import { IconCloudDemo } from "@/components/ui/icon-cloud-demo";
 import DownloadButton from '@/components/ui/DownloadButton';
 
 const BLUR_FADE_DELAY = 0.04;
 
 
 
-export function ScrollBasedVelocityDemo() {
-  return (
-      <VelocityScroll
-          text=""
-          default_velocity={5}
-          className="font-display text-center text-4xl font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-7xl md:leading-[5rem]"
-      />
-  );
-}
-
-export function TypingAnimationDemo() {
-  const anText = "Data Science | Machine Learning | Gen AI | Fullstack Web Dev";
-  return (
-      <TypingAnimation
-          className="text-2xl font-bold text-black dark:text-white whitespace-nowrap"
-          text={anText}
-          duration={50}
-      />
-  );
-}
-
-const slugs = [
-  "typescript",
-  "javascript",
-  "python",
-  "solidity",
-  "react",
-  "drizzle",
-  "neondb",
-  "html5",
-  "css3",
-  "nodedotjs",
-  "c",
-  "nextdotjs",
-  "cplusplus",
-  "matplotlib",
-  "c",
-  "powerbi",
-  "uipath",
-  "wordpress",
-  "mongodb",
-  "firebase",
-  "pnpm",
-  "linux",
-  "flask",
-  "huggingface",
-  "machinelearning",
-  "streamlit",
-  "netlify",
-  "vercel",
-  "r",
-  "tensorflow",
-  "mysql",
-  "docker",
-  "git",
-  "mysql",
-  "github",
-  "gitlab",
-  "visualstudiocode",
-  "androidstudio",
-  "webstorm",
-  "pycharm",
-  "tailwindcss",
-  "vuedotjs"
-];
-
-export function IconCloudDemo() {
-  return (
-      <div className="relative flex size-full max-w-lg items-center justify-center overflow-hidden rounded-lg  bg-transparent px-20 pb-20 pt-8 ">
-        <IconCloud
-            iconSlugs={slugs}
-            options={{ dragControl: true }}/>
-      </div>
-  );
-}
 
 
 export default function Page() {
@@ -194,7 +118,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
                 <ProjectCard
-                  href={project.href}
+
                   key={project.title}
                   title={project.title}
                   description={project.description}
