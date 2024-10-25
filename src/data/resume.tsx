@@ -222,6 +222,38 @@ export const DATA = {
       video:
         "",
     },
+    {
+      title: "Meet Rooms",
+      href: "",
+      dates: "Jan 2024 - Feb 2024",
+      active: true,
+      description:
+        "A Platform To Create Personal Spaces For Video Calls & Call Recording",
+      technologies: [
+        "NextJS",
+        "Shadcn",
+        "Typescript",
+        "TailwindCSS",
+        "Clerk",
+        "Stream",
+
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/adityavardhansharma/meeetroom",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://meetrooms.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/trustnet.png",
+      video:
+        "",
+    },
   ],
   hackathons: [
     {
