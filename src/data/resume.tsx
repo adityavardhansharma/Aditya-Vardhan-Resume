@@ -250,7 +250,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/trustnet.png",
+      image: "/meetroom.png",
       video:
         "",
     },
